@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Login And Signup Page</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="display">
+            <img src="" alt="">
+        </div>
+        <div class="user_entry">
+
+            <form action="" id="login">
+                <div class="entry-label"><h3>LOGIN</h3></div>
+                <div>
+                    <label for="username">Username</label>
+                    <input type="text" placeholder="Syntactic Dev">
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="********">
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="">
+                    <span>Agree to remember the password</span>
+                </div>
+                <div>
+                    <button type="submit" id="loginBtn">Login</button>
+                    <a href="" id="register_account_btn">No account?</a>
+                </div>
+            </form>
+            <form action="" id="register">
+                <div class="entry-label"><h3>SIGN UP</h3></div>
+                <div>
+                    <label for="username">Username</label>
+                    <input type="text" placeholder="Syntactic Dev">
+                </div>
+                <div>
+                    <label for="email">Email address</label>
+                    <input type="email" placeholder="SyntacticDev@example.com">
+                </div>
+                <div>
+                    <label for="email">Phone Number</label>
+                    <input type="number" placeholder="000-0000-0000">
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="********">
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="">
+                    <span>Agree to remember the password</span>
+                </div>
+                <div>
+                    <button type="submit" id="registerBtn">Sign up</button>
+                    <a href="" id="login_account_btn">Have an account?</a>
+                </div>
+            </form>
+           
+        </div>
+    </div>
+
+
+    <script>
+        const register = document.querySelector('#register')
+        const register_account_btn = document.querySelector('#register_account_btn')
+        const login = document.querySelector('#login')
+        const login_account_btn = document.querySelector('#login_account_btn')
+
+        register_account_btn.addEventListener('click',(e)=>{
+            e.preventDefault()
+            register.style.display = 'grid'
+            register.style.opacity = 1
+            login.style.display = 'none'
+        })
+    </script>
+</body>
+</html>

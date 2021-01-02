@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+    height: 85vh;
+    box-shadow: 0px 2px 4px 2px rgb(56, 55, 55);
+}
+
+
+
+.container div {
+    width: 50%;
+    height: 100%;
+}
+
+.display {
+    background: rgb(214, 174, 174);
+    background-image: url('./img/woman-3083383_1920.jpg');
+    clip-path: polygon(100% 0, 68% 49%, 100% 100%, 0% 100%, 0 48%, 0% 0%);
+    background-position: center;
+    background-size: cover;
+    background-position-x: -250px;
+}
+
+.user_entry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    width: 100%;
+}
+
+#login div {
+    margin: 20px;
+}
+
+#register div {
+    margin: 10px;
+}
+
+ input[type='text'],
+ input[type='password'],
+ input[type='email'],
+ input[type='number'] {
+     border: none;
+     border-bottom: 2px solid rgb(179, 167, 167);
+     width: 100%;
+     margin-top: 10px;
+     background: transparent;
+ }
+
+ label {
+     margin-bottom: 10px;
+     font-weight: 700;
+ }
+
+ .entry-label {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     color: gray;
+     letter-spacing: 2px;
+     font-size: 20px;
+     border-left: 5px solid green;
+     margin: 10fr 0;
+ }
+
+ 
+
+button {
+    width: 100px;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 15px;
+    background: grey;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button:hover {
+    background: goldenrod;
+}
+
+#login {
+    transition: display 850ms  ;
+}
+
+#register {
+    display: none;
+    transition: display 850ms ;
+}
+
+@media (max-width: 960px){
+    .container {
+        background-image: url('./img/woman-3083383_1920.jpg');
+        background-size: cover;
+        background-position: center center;
+        overflow: hidden;
+    }
+    .display {
+        display: none;
+    }
+
+    .container {
+        width:80%;
+    }
+
+    .container div{
+        width: 100%;
+        margin: 10% 10% auto;
+        color: #fff;
+    }
+
+    #login div, #register div {
+        margin: 10px 0;
+    }
+
+    ::placeholder {
+        color: #fff;
+    }
+    button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    a {
+        color: #fff;
+        padding: 20px;
+    }
+}
